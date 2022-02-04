@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instacart Receipt Email</title>
+</head>
+<style>
+  body {
+      margin: 0;
+      font-family: 'Lucida Grande', 'Segoe UI', Verdana, sans-serif;
+      background-color: #eeeeee;
+    }
+    table {
+      border-spacing: 0;
+    }
+    td {
+      padding: 0;
+    }
+    img {
+      border: 0;
+      display: block;
+    }
+    .wrapper {
+      background-color: white;
+      width: 100%;
+      margin: 0 auto;
+      table-layout: fixed;
+      max-width: 640px;
+    }
+    .main {
+      width: 100%;
+      margin: 0 auto;
+      border-spacing: 0;
+    }
+    .header{
+      width: 100%; 
+      border-top: 1px solid #EEEEEE;
+      border-bottom: 1px solid #EEEEEE;     
+    }
+    .logo{
+      max-width: 120px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+    .delivery{
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .delivery img{
+      margin: 0 auto;
+      border-radius: 100px;
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+    }
+    .list{
+      width: 100%;
+      margin-top: -20px;
+      padding: 0 2%;      
+    }
+    .title{
+      width: 100%;
+      background-color: #438EAD;
+      color: #FFFFFF; 
+      padding: 0 4%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;     
+    }
+    .heading{
+      font-family: Helvetica,sans-serif;
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #AAAAAA;
+      line-height: .7;
+    }
+    .category{
+      width: 100%;
+      padding-left: 4%;
+      border-left: 1px solid #CCCCCC;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+    .item{
+      width: 100%;
+      padding:  10px 3% 20px 3%;
+      border-left: 1px solid #CCCCCC;
+      border-right: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+    .item img{
+      max-width: 60px;
+      margin: none;
+    }
+    .description{
+      width: 100%;
+      padding: 0 3%;
+    }
+    .totals{
+      width: 100%;
+    }
+    .totals p{
+      margin: 5px 0;
+    }
+    .referral{
+      width: 100%;
+      margin-top: 50px;
+      border: 1px solid #BDEE88;
+    }
+    .footer{
+      width: 100%;
+      background-color: #FAFAFA;
+    }
+    .socials{
+      margin: 50px auto;
+    }
+    .socials img{
+      padding: 0 35px;
+    }
+    .share{
+      font-size: 24px; 
+      background-color: #EEEEEE; 
+      padding: 15px 30px; 
+      border-radius: 7px; 
+      color: #333333;
+    }
+    @media screen and (max-width: 465px) {
+        .share{
+          font-size: 16px; 
+          background-color: #EEEEEE; 
+          padding: 15px 30px; 
+          border-radius: 7px; 
+          color: #333333;
+        }
+      }
+</style>
+<body>
+  <table class="wrapper">
+    <tr>
+      <td>
+        <table class="main">
+          <tr>
+            <td>
+              <table class="header">
+                <tr>
+                  <td>
+                    <a href="">
+                      <img src="https://ci4.googleusercontent.com/proxy/gF2UJwMO7g21ZoWKNz5slAEK1e1HYJI4RlMuifa0YfHCMawE3gev8WsAoriOiAlj9Tr2rfaMM7KJJveX5hLSMC-9f7QvZFZqepLVt4iwkMVGrlfpq95Hjygi3NUEWuzDExH_JOwDdojrycKXnRehLwoaqQ2BUtsn1zRFhyefOpGsa2ySb9qheUsjlYJYTVIfJBjH4M8eSlpre6sDzPHifF45ySqOxa2VYttERp4=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/beetstrap/brand/instacart-logo-color@2x-94bba070b6b96a4f35e7a6146e41e1422dd1aa44c001b49dcba24053ea84d5cc.png" alt="" class="logo">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="delivery">
+                <tr>
+                  <td>
+                    <img src="https://media.gettyimages.com/photos/portrait-of-a-young-woman-outdoors-picture-id1324890864?k=20&m=1324890864&s=612x612&w=0&h=n8shUGxoS4C_lkWqOGqejNTT6mUMOrlXRnetnNfjge8=" alt="" width="200">
+                    <p style="font-size: 30px;">Marianela delivered your order</p>
+                    <hr style="height: 1px; background-color: #EEEEEE; border: none;">
+                    <p style="font-size: 18px;">Your order from Publix was placed on June 18th, 2021 and delivered on June 18th, 2021 at 10:19 AM</p>
+                    <table  style="margin: -10px auto 0 auto;">
+                      <tr>
+                        <td>
+                          <p style="background-color: #438EAD; color: #FFFFFF; padding: 4px 10px; border-radius: 5px;"><strong>13</strong></p>
+                        </td>
+                        <td>
+                          <p style="color: #AAAAAA; font-size: 22px; padding-left: 10px;">Items Found</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table class="list">
+                <tr>
+                  <td>
+                    <table class="title">
+                      <tr>
+                        <td>
+                          <p class="heading" style="font-weight: bold; font-size: 16px; color: #FFFFFF; ">ITEMS FOUND (PUBLIX)</p>
+                        </td>
+                        <td>
+                          <p style="background-color: #347690; color: #FFFFFF; padding: 4px 10px; border-radius: 5px; float: right;"><strong>13</strong></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">Breakfast</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci5.googleusercontent.com/proxy/1yCctxOYARd2HRcrzSiTnmhAeU-RyfTf-Kmwdi1heSxjhgJRxflnZyJULYqa3cVfiyt4DKB8tEtM-14hebvorZdX2xhlCW-5TV9YQijNM5-5G-hfpv0jv37P4Q-WEiboAzlOdOBoOe3V68SmDMb79dxigiLve6_3bYE=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_bf9491b5-8d52-45bf-b413-2db2e6a2e603.png" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">Honey Nut Cheerios Cereal with Oats, Gluten Free (15.4 oz)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">2 x $5.39</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; text-decoration: line-through; font-size: 14px; margin: 0;">$10.78</p>
+                          <p style="color: #ff0000; font-size: 14px; margin: 0;">$5.39</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">Dairy & Eggs</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci5.googleusercontent.com/proxy/rSRKnczojZmHZ1V84XIi86swZoiTC0IZIcJHAVveCck8a63GxnyCKNIez8PlaOXT47NjNEostAjfgA6o_yl43o8B7Eb5KXxoJzH5Thd-msXFvfmDZucwmKLRGLwSe-KgtQjOemLMqUMlPluSXZZSHaneUEEGXbFIYJIa=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_df933d7b-76d2-4e87-96bd-4759b3f7efeb.jpeg" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">	Publix Milk, Reduced Fat, 2% Milkfat (64 oz)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">1 x $3.47</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; font-size: 14px; margin: 0;">$3.47</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">PRODUCE</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci3.googleusercontent.com/proxy/7VAHnFt1tdx7VzSqkTNEaiN7ua1d02v0vu0qzU5C1xGXJn1VbjtSopfB1Bz0HJ-quV-PF9WMRP5UJkOQSD1pj5Td4_jmtV8YJEd31C70aubhjTBFVQlVFMMKqgtAaqyqNo30zuIL-uHiqE66HKyxKV8umdVbCjjpucfJ=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_1b85147e-db5e-41ec-9b6c-b3f936069894.jpeg" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">Banana (~ 0.48 lb)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">2.8 lb x $0.75</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; font-size: 14px; margin: 0;">$2.10</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci5.googleusercontent.com/proxy/DjeXN8oKScBNo4MVFSnGqM-wweYPley3zmtAAQCf3_yHtXLINy6e1A1HqFdyhc83RGVxrvtSjoJdCfyIh4qkpA4_H7Ec7atscPDay7j9fDle2i2jOAmQRJDaldejvmejgAaVEDovHAZ7qEJDjo7kFLqQEWAeMWhnkWCF=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_2f81368b-c0a0-4895-8183-afb829e392e4.jpeg" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">Whole Strawberries (1 lb Container)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">1 x $3.33</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; text-decoration: line-through; font-size: 14px; margin: 0;">$5.53</p>
+                          <p style="color: #ff0000; font-size: 14px; margin: 0;">$3.33</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">BEVERAGES</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci5.googleusercontent.com/proxy/rSRKnczojZmHZ1V84XIi86swZoiTC0IZIcJHAVveCck8a63GxnyCKNIez8PlaOXT47NjNEostAjfgA6o_yl43o8B7Eb5KXxoJzH5Thd-msXFvfmDZucwmKLRGLwSe-KgtQjOemLMqUMlPluSXZZSHaneUEEGXbFIYJIa=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_df933d7b-76d2-4e87-96bd-4759b3f7efeb.jpeg" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">	Natalie's Juice, Orange (64 oz)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">1 x $6.63</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; font-size: 14px; margin: 0;">$6.63</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">PRODUCE</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci3.googleusercontent.com/proxy/uEDj4UobLEWpAK-ASyUuMEu1_gKSxLHX1PkaFVl2JagR0ydjBh57R5qJBlcCi3cCsj46opWQht_F-KmYYmPbZcFyNdF_l6wKNbkqzn7c5yH3xxMnrowTCit9-z7TOJoiG9_QNYO-Rz-pC-Ya6pye58ZZKWRbgicX6Kk=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_d442f38c-5fb1-4985-bff4-c8afb2fecdee.png" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">	Nature Valley Granola Bars, Peanut Butter, Crunchy (6 each)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">2 x $3.97</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; text-decoration: line-through; font-size: 14px; margin: 0;">$7.94</p>
+                          <p style="color: #ff0000; font-size: 14px; margin: 0;">$3.97</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci4.googleusercontent.com/proxy/8cnnCn6Qn9wuxZrcLkfieKJOxan6TS-s3EviIiZDJiLC8SZgLqd9M4ygvDWqy-_SWW7h8GWYrzcHXu6iQFmzw-yESj9GFGGaHG1kt7Sf-o5bJbKFRNdWdpSFh8SPomKaofI31RMZt1NDZcSIjjsy_Ju1UDk5e96AkFA=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_fe8dfbe5-079a-4dba-bcd3-e3e8888ef6e9.png" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">Nature Valley Granola Bars, Sweet & Salty Nut, Almond (6 each)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">2 x $3.97</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; text-decoration: line-through; font-size: 14px; margin: 0;">$7.94</p>
+                          <p style="color: #ff0000; font-size: 14px; margin: 0;">$3.97</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="category">
+                      <tr>
+                        <td>
+                          <p class="heading">Dairy & Eggs</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="item">
+                      <tr>
+                        <td>
+                          <img src="https://ci6.googleusercontent.com/proxy/FJQU-ff9u-gIID2gMojJxqcpxz-50kmv1SvAq8tP0Hplz10ecHYDHYg7w4dlIB0hEMF8WHVoRqtzGyiGS2utYl6F5rWzjGFUvoWpbOgfA-5rzgbON5IKrmGtyUuzjh-Psg-oCGBW6c7FfF-CziMchDiQ8KKgEgDk2wE=s0-d-e1-ft#https://d2lnr5mha7bycj.cloudfront.net/product-image/file/thumb_45a81463-6b6b-4aa6-99de-462decc976a5.jpg" alt="">
+                        </td>
+                        <td class="description">
+                          <p style="color: #AAAAAA; font-size: 14px;">Kraft Cheddar & Asadero Shredded Cheese with Taco Seasoning for Tacos (8 oz)</p>
+                          <p style="color: #CCCCCC; font-size: 12px; line-height: 0;">2 x $3.33</p>
+                        </td>
+                        <td style="text-align: right;">
+                          <p style="color: #AAAAAA; text-decoration: line-through; font-size: 14px; margin: 0;">$9.94</p>
+                          <p style="color: #ff0000; font-size: 14px; margin: 0;">$6.66</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 100%; text-align: center; padding: 40px 0;">
+                    <a href="" style="color: #01939a;">See more items</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="totals">
+                      <tr>
+                        <td>
+                          <p style="font-size: 18px; font-weight: 550; color: #AAAAAA; font-family: Arial, Helvetica, sans-serif; padding-left: 4%; ">ORDER TOTALS</p>
+                          <hr style="height: 1px; background-color: #CCCCCC; border: none;">
+                          <table style="width: 100%; padding-right: 30px;">
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA;">Items Subtotal</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA;">$54.25</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA;">Delivery Fee</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA;">$3.99</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA;">Sales Tax</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA;">$0.40</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA;">Tip</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA;">$8.14</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA;">Service Fee	</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA;">$3.80</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <hr style="height: 1px; background-color: #CCCCCC; border: none;">
+                          <table style="width: 100%; padding-right: 30px">
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #AAAAAA; font-weight: bold;">Total</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #AAAAAA; font-weight: bold;">$70.58</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: right; width: 85%;">
+                                <p style="color: #ff0000;">Service Fee	</p>
+                              </td>
+                              <td style="text-align: right; width: 15%;">
+                                <p style="color: #ff0000;">$3.80</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table style="width: 100%">
+                            <tr>
+                              <td>
+                                <p style="font-size: 18px; font-weight: 550; color: #AAAAAA; font-family: Arial, Helvetica, sans-serif; padding-left: 4%; ">CHARGES</p>
+                              </td>
+                              <td style="float: right; padding-right: 30px; color: #AAAAAA;">
+                                <p>VISA ending in 9776</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <hr style="height: 1px; background-color: #CCCCCC; border: none;">
+                          <table style="width: 100%;">
+                            <tr>
+                              <td style="color: #AAAAAA; text-align: right; width: 70%;">
+                                <p>Original Charge</p>
+                                <p style="font-size: 14px;">Your card was temporarily authorized for $85.00. Your statement will reflect a final charge within 7 business days of order completion.</p>
+                                <a href="" style="color: #438EAD; font-size: 14px;">Learn More</a>
+                              </td>
+                              <td style="width: 30%; padding-right: 30px;">
+                                <p style="color: #AAAAAA; text-align: right;">$70.58</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <hr style="height: 1px; background-color: #CCCCCC; border: none;">
+                          <table style="width: 100%;">
+                            <tr>
+                              <td style="color: #AAAAAA; text-align: right; width: 70%; font-weight: bold;">
+                                <p>Total Charged</p>
+                              </td>
+                              <td style="width: 30%; padding-right: 30px;">
+                                <p style="color: #AAAAAA; text-align: right;">$70.58</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p style="font-size: 20px; padding-bottom: 30px; text-align: center;">Have an issue with your order?</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="" style="text-decoration: none;">
+                            <table style="background-color: #F7A700; margin: 0 auto; padding: 12px 24px; border-radius: 7px;">
+                              <tr>
+                                <td style="padding-right: 10px;">
+                                  <p style="color: #FFFFFF; font-weight: bold;">Rate order and report an issue</p>
+                                </td>
+                                <td>
+                                  <img src="https://ci3.googleusercontent.com/proxy/jDrDWQi61qMjeNaJsXZh61WlfWF9S5-Lb219n9RsiT7-CoEQ7plvA0VnoPrmMfirGgHapcmQ-oDColEKLWsWx2WDoun89XKzUbeIpDocfEgf3Kh4UyYgOg-rhh_1AcqO6_bZBqIgxHvOQS5X4YVL4H-BPIPNsS7gSTApddJY_KevAEXIrQxtiOf4LjZvtoiyhRFegaz7R4bozSaa_aI=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/mailers/base/caret-white-611b4657bf807097ee4655e56d1523402aadef1f2dc9208394c08c4010bc88b8.png" alt="">
+                                </td>
+                              </tr>
+                            </table>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="referral">
+                      <tr>
+                        <td>
+                          <table style="width: 100%; background-image:url(https://ci6.googleusercontent.com/proxy/BY8kxwA1wyNFp6WL-_bfb2kzQ1u-HeGnV-pJ57GYLw0iP549q-FLeuDC4ZHICFMBFUpoGHtj-ZVYepvDTjs5GMzS65nz4RiGVR9WNk3HgU0_FYyb_stkRZx4ACs4yFdmqRAKuholBeM7zTj8TilZaLRMm7lYCKgmHKSfmgafAD_ScXuwYnWspNWJa6ihH_O9aHzaWdxw90wSm5CKlE3H=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/referrals/referral-banner-085eb5b973cc8e5e376c90dea35a0fc1260b5f844096eae53f5264087fc571bf.png); padding: 10px 4%;">
+                            <tr>
+                              <td>
+                                <img src="https://ci4.googleusercontent.com/proxy/vWwSRDZ2Coy4oxZ_0AGF4M-rBV3dBd2tTQlWDCM-2pYrPx45sEI-XvHA-zBuI4uYamsvA2dXnt29SEP-RURtvo6VOVwGDWpgRTcHOk6-2_8g-NbaSBWxUAZtJJj0COjaQ0MY6QM11tgKkcMU2dYhOVHHmFpS1iFWeN9nuQdytGU1LaQDIe0Pv3v635meGZUcgzZ252gO_tXE_SFZg3r1DqboHfo=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/referrals/artwork-square-money-bad0850b8f3c39b1e4e242c70191b3b60f923a64bca65842d5d657c964ddc65b.png" alt="" width="70">
+                              </td>
+                              <td>
+                                <p style="font-size: 24px; color: #266E0C;">Give $10, Get $10</p>
+                                <p style="color: #266E0C;">for every friend who places their first order</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr style="text-align: center;">
+                        <td>
+                          <p style="font-size: 18px;">Share your link:</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table style="margin: -20px auto 0 auto;">
+                            <tr>
+                              <td>
+                                <p class="share"><strong>https://inst.cr/t/SzJuWHBxVXpE</strong></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table style="margin: 0 auto; padding-top: 40px;">
+                            <tr>
+                              <td>
+                                <a href="" style="font-size: 16px; background-color: #4267B2; padding: 15px 30px; border-radius: 5px; color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><strong>SHARE ON FACEBOOK</strong></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-bottom: 60px;">
+                          <table style="margin: 0 auto; padding-top: 70px;">
+                            <tr>
+                              <td>
+                                <a href="" style="font-size: 16px; background-color: #55ACEE; padding: 15px 36px; border-radius: 5px; color: #FFFFFF; text-decoration: none; text-transform: uppercase; "><strong>SHARE ON TWITTER</strong></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr style="text-align: center;">
+                  <td style="padding-top: 30px;">
+                    <p style="font-size: 18px; color: #AAAAAA;">Download Instacart for your phone</p>
+                  </td>                  
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 50px;">
+                    <table style="margin: 0 auto;">
+                      <tr>
+                        <td style="padding-right: 30px;">
+                          <a href="">
+                            <img src="https://ci4.googleusercontent.com/proxy/TlKnPQao3p65TgvDhEg_g6D9x6RHAEJ1u0Bzv8ult0BxA8IvrM3THLcHbQ3GhfkOM6zthQlUI4Q0Te7NZzcx3vaRsdeHhWv7R7RalgRrpcABZC6BT2l-3L0k3lRU1CT5aLnYhx7qM_ujuF1wBDVJDTjw5NWzs12QcQWW7Cv2FHjLtft5-c-a4lcerpF4l24_BqmAnFL9TM5QXvwK=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/mailers/base/app-store-ea872044796081be028fa86d306ad4fab266b60ad696cb8ad6633095d8dfcf0b.png" alt="" width="117">
+                          </a>
+                        </td>
+                        <td>
+                          <a href="">
+                            <img src="https://ci3.googleusercontent.com/proxy/9aUin6H3kgOILphs58YNh8crRLM4capK5_w6NEHoyov1BO-3GUs8gSkJKyz_3xc3oLhSYrCQP1mFOziDIiz57bNxC2toV77LfqrEnd-rrCs6RknziYRJzujVnsuTFKjf_-h3LCkRW07hM1xfvwpa-QZG660ajW2G7qN7xzDTdvcX56J9U9UQCrA1OpMgfVZIT8AfBEHNE5wjKQ=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/mailers/base/android-7b253114de2979be7586217ee7549dcbb6f5b725d6360071a73d825e72a30a7b.png" alt="" width="135">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="footer">
+                      <tr>
+                        <td>
+                          <table class="socials">
+                            <tr>
+                              <td>
+                                <a href="http://facebook.com/instacart">
+                                  <img src="https://ci4.googleusercontent.com/proxy/BVYeBhFrtRRmPcu5qpiZ3ZH-nmoD9L-MF4isxPTqOIUW9_K0Kn7RGINSpFgtirHWmhivChnBpdCaa83k2iHmtdmPCjhi1ob6KyeMiO6OfugnitsRKkwsD_RH8HwH8eLUB4wd1MNHvpV_8GpuuqVtK2a8FVGcPd-uBdOv-ttdY8mlqmqRMiqqItLoDPM49wjKbvp9lwt47WyR7Sg=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/deals/emails/facebook-9e3f3d55d30e8b4ad2fe344ee41a78dce5080f61f059dc0a15637ce6a1871dc3.png" alt="" width="25">
+                                </a>
+                              </td>
+                              <td>
+                                <a href="http://twitter.com/instacart">
+                                  <img src="https://ci4.googleusercontent.com/proxy/wMg7hUqMLhNtrezTduwclqojbIDnCrckdONYUCa0DaulqKksW-TloG0pCvyrM0BkBMxAe83jaPn6ejNl9Pe0_MkYaVvhJPmVlDBnBOcX7lgrYS1y1TaHHk3A3ywGb3JKXCtmdv5Erls1dV8tlE7pkJXbnR99n6z2RYoDR8cmPRMhoV8FceReZJw1R_AP0CQcZJenkt4FSkBTTQ=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/deals/emails/twitter-ab9d0574b58b725f77a3651cf43788820603ed39c6166e6984f04b01345571c1.png" alt="" width="25">
+                                </a>
+                              </td>
+                              <td>
+                                <a href="http://instagram.com/instacart">
+                                  <img src="https://ci5.googleusercontent.com/proxy/7S5Brc0zhSbQdMKpWdF-kLX3Xf40ayhEs2tAzoCjMyXRLhKDnSnuOV_AOGgKoFI5-uUE3Q-_wRoemyT5E1-PkgIQW51-GH_1wX6pzA5U_YCYUF7RgHUW4HdN_S9EIjkRAbIX5EM91avh9inX6B2baQCw-7TG3hUUBrAXtyJA7WzbrLKJ4_iyNkqegZWPLKssnKW5wpjmwksuUJbi=s0-d-e1-ft#https://d2guulkeunn7d8.cloudfront.net/assets/deals/emails/instagram-4417e87ec72e479df3a286e553d1e45e0b36431cef6ab86ec8d7a3294f512f44.png" alt="" width="25">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <hr style="height: 1px; background-color: #EEEEEE; border: none;">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 14px;text-align: center;">
+                          <p>All promotional offers and discounts subject to Instacart <a href="" style="color: #01939a;">terms of service</a>. Service fees or tips may still apply.</p>
+                          <p style="margin: 0;">Instacart</p>
+                          <p style="margin: 0;">50 Beale St. Suite 600. San Francisco, CA 94105</p>
+                          <p style="margin: 0;">web: <a href="" style="color: #01939a;">https://www.instacart.com</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
